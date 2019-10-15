@@ -11,6 +11,13 @@
 		9B9D6A5723567D30007E54A4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5623567D30007E54A4 /* Vehicle.swift */; };
 		9B9D6A5923567D4C007E54A4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5823567D4C007E54A4 /* Car.swift */; };
 		9B9D6A5B23567D6A007E54A4 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5A23567D6A007E54A4 /* Motorcycle.swift */; };
+		9B9D6A5E23567DD7007E54A4 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5D23567DD7007E54A4 /* Employee.swift */; };
+		9B9D6A6023567DF2007E54A4 /* CommissionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5F23567DF2007E54A4 /* CommissionBasedPartTime.swift */; };
+		9B9D6A6223567E06007E54A4 /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A6123567E06007E54A4 /* FixedBasedPartTime.swift */; };
+		9B9D6A6423567E15007E54A4 /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A6323567E15007E54A4 /* FullTime.swift */; };
+		9B9D6A6623567E27007E54A4 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A6523567E27007E54A4 /* Intern.swift */; };
+		9B9D6A6923567E40007E54A4 /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A6823567E40007E54A4 /* PartTime.swift */; };
+		9B9D6A6B23567E76007E54A4 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A6A23567E76007E54A4 /* IPrintable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +38,13 @@
 		9B9D6A5623567D30007E54A4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		9B9D6A5823567D4C007E54A4 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		9B9D6A5A23567D6A007E54A4 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		9B9D6A5D23567DD7007E54A4 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		9B9D6A5F23567DF2007E54A4 /* CommissionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommissionBasedPartTime.swift; sourceTree = "<group>"; };
+		9B9D6A6123567E06007E54A4 /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
+		9B9D6A6323567E15007E54A4 /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
+		9B9D6A6523567E27007E54A4 /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
+		9B9D6A6823567E40007E54A4 /* PartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
+		9B9D6A6A23567E76007E54A4 /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +77,10 @@
 		9B9D6A4D23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {
 			isa = PBXGroup;
 			children = (
+				9B9D6A5C23567D92007E54A4 /* Employee */,
 				9B9D6A5523567CE4007E54A4 /* Vehicles */,
 				9B9D6A4E23567C11007E54A4 /* main.swift */,
+				9B9D6A6A23567E76007E54A4 /* IPrintable.swift */,
 			);
 			path = Group1_F2019_MAD3004_FP;
 			sourceTree = "<group>";
@@ -77,6 +93,19 @@
 				9B9D6A5A23567D6A007E54A4 /* Motorcycle.swift */,
 			);
 			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		9B9D6A5C23567D92007E54A4 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				9B9D6A5D23567DD7007E54A4 /* Employee.swift */,
+				9B9D6A5F23567DF2007E54A4 /* CommissionBasedPartTime.swift */,
+				9B9D6A6123567E06007E54A4 /* FixedBasedPartTime.swift */,
+				9B9D6A6323567E15007E54A4 /* FullTime.swift */,
+				9B9D6A6523567E27007E54A4 /* Intern.swift */,
+				9B9D6A6823567E40007E54A4 /* PartTime.swift */,
+			);
+			path = Employee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +166,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B9D6A5B23567D6A007E54A4 /* Motorcycle.swift in Sources */,
+				9B9D6A6623567E27007E54A4 /* Intern.swift in Sources */,
 				9B9D6A5723567D30007E54A4 /* Vehicle.swift in Sources */,
+				9B9D6A6923567E40007E54A4 /* PartTime.swift in Sources */,
+				9B9D6A6023567DF2007E54A4 /* CommissionBasedPartTime.swift in Sources */,
+				9B9D6A6423567E15007E54A4 /* FullTime.swift in Sources */,
+				9B9D6A6B23567E76007E54A4 /* IPrintable.swift in Sources */,
 				9B9D6A4F23567C11007E54A4 /* main.swift in Sources */,
+				9B9D6A6223567E06007E54A4 /* FixedBasedPartTime.swift in Sources */,
+				9B9D6A5E23567DD7007E54A4 /* Employee.swift in Sources */,
 				9B9D6A5923567D4C007E54A4 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
