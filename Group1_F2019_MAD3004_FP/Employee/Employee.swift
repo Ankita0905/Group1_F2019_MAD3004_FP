@@ -8,5 +8,12 @@
 
 import Foundation
 class Employee{
+    var name: String
+    var age: Int
+    var Earning: Float
     
+    init(EmpName:String,EmpAge:Int,EmpEarning:Float) {
+        
+    
+    }
 }
