@@ -12,5 +12,8 @@ class Employee{
     var age: Int
     var Earning: Float
     
+    init(EmpName:String,EmpAge:Int,EmpEarning:Float) {
+        
     
+    }
 }
