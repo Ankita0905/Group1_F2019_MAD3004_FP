@@ -7,3 +7,12 @@
 //
 
 import Foundation
+class Intern:Employee
+{
+    var schoolName:String
+    init(IName:String,IAge:Int,IEarning:Float,SchoolName:String)
+    {
+        self.schoolName=SchoolName
+        super.init(EmpName: IName, EmpAge: IAge, EmpEarning: IEarning)
+    }
+}
