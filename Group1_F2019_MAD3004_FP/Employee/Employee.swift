@@ -10,12 +10,28 @@ import Foundation
 class Employee{
     var name: String
     var age: Int
-    var earning: Float
+    var earning: Float = 1000.0
     
     init(EmpName:String,EmpAge:Int,EmpEarning:Float)
     {
-        self.name = EmpName
-        self.age = EmpAge
-        self.earning = EmpEarning
+        name = EmpName
+        age = EmpAge
+        earning = EmpEarning
     }
+    // created By Anikta and Karan
+    //https://www.zerotoappstore.com/get-year-month-day-from-date-swift.html
+    func calBirthYear() -> Int {
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year], from: date)
+        let year = components.year!
+        return year-age
+       
+        
+    }
+    
+//   func calEarnings() -> <#return type#>
+//   {
+//       <#function body#>
+//   }
 }
