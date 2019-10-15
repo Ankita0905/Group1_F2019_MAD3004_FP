@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9B9D6A4F23567C11007E54A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A4E23567C11007E54A4 /* main.swift */; };
+		9B9D6A5723567D30007E54A4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5623567D30007E54A4 /* Vehicle.swift */; };
+		9B9D6A5923567D4C007E54A4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5823567D4C007E54A4 /* Car.swift */; };
+		9B9D6A5B23567D6A007E54A4 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5A23567D6A007E54A4 /* Motorcycle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		9B9D6A4B23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group1_F2019_MAD3004_FP; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9D6A4E23567C11007E54A4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9B9D6A5623567D30007E54A4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		9B9D6A5823567D4C007E54A4 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		9B9D6A5A23567D6A007E54A4 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,20 @@
 		9B9D6A4D23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {
 			isa = PBXGroup;
 			children = (
+				9B9D6A5523567CE4007E54A4 /* Vehicles */,
 				9B9D6A4E23567C11007E54A4 /* main.swift */,
 			);
 			path = Group1_F2019_MAD3004_FP;
+			sourceTree = "<group>";
+		};
+		9B9D6A5523567CE4007E54A4 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				9B9D6A5623567D30007E54A4 /* Vehicle.swift */,
+				9B9D6A5823567D4C007E54A4 /* Car.swift */,
+				9B9D6A5A23567D6A007E54A4 /* Motorcycle.swift */,
+			);
+			path = Vehicles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9D6A5B23567D6A007E54A4 /* Motorcycle.swift in Sources */,
+				9B9D6A5723567D30007E54A4 /* Vehicle.swift in Sources */,
 				9B9D6A4F23567C11007E54A4 /* main.swift in Sources */,
+				9B9D6A5923567D4C007E54A4 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
