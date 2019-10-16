@@ -7,3 +7,12 @@
 //
 
 import Foundation
+class PartTime:Employee,IPrintable
+{
+    func printMyData() {
+        <#code#>
+    }
+    
+    
+    
+}
