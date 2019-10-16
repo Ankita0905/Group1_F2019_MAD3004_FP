@@ -13,9 +13,11 @@ class PartTime:Employee,IPrintable
     var hoursworked:Int
 
   
-    init(EmpName:String,EmpAge:Int,EmpEarning:Float,Rate:Float,HoursWorked:Int)
+    init(PTEmpName:String,PTEmpAge:Int,PTEmpEarning:Float,Rate:Float,HoursWorked:Int)
     {
-        <#statements#>
+        self.rate=Rate
+        self.hoursworked=HoursWorked
+        super.init(EmpName:PTEmpName, EmpAge:PTEmpAge, EmpEarning:PTEmpEarning)
     }
     
     
