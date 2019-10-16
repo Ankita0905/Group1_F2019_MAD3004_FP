@@ -9,6 +9,12 @@
 import Foundation
 class PartTime:Employee,IPrintable
 {
+    var rate:Float
+    var hoursworked:Int
+
+  
+    
+    
     func printMyData() {
         <#code#>
     }
