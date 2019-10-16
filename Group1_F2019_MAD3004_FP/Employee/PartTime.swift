@@ -13,6 +13,10 @@ class PartTime:Employee,IPrintable
     var hoursworked:Int
 
   
+    init(EmpName:String,EmpAge:Int,EmpEarning:Float,Rate:Float,HoursWorked:Int)
+    {
+        <#statements#>
+    }
     
     
     func printMyData() {
