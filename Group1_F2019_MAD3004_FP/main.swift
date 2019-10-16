@@ -8,7 +8,7 @@
 
 import Foundation
 
-
-
 var a=Intern(IName: "Karan", IAge: 23, IEarning: 1000.0, SchoolName: "Lambton")
 print(a.calBirthYear())
+
+
