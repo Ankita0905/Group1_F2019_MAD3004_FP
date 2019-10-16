@@ -7,12 +7,22 @@
 //
 
 import Foundation
-class Intern:Employee
+class Intern:Employee,IPrintable
 {
+  
+    
+   
     var schoolName:String
     init(IName:String,IAge:Int,IEarning:Float,SchoolName:String)
     {
         self.schoolName=SchoolName
         super.init(EmpName: IName, EmpAge: IAge, EmpEarning: IEarning)
     }
+    
+    func printMyData() {
+        print("Employee Is Intern")
+        print(" Name :\(name)\n","Age :\(age)\n","School :\(schoolName)")
+    }
+   
+    
 }
