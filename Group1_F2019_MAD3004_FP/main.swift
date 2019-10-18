@@ -11,4 +11,5 @@ import Foundation
 var a=Intern(IName: "Karan", IAge: 23, IEarning: 1000.0, SchoolName: "Lambton")
 print(a.calBirthYear())
 a.printMyData()
-
+var b=PartTime(PTEmpName: "Sandeep", PTEmpAge: 23, PTEmpEarning: 2000.0, Rate: 28, HoursWorked: 29)
+b.printMyData()
