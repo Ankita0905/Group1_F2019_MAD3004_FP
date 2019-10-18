@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55C07864235968B2008548CA /* DataofEmp.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C07862235965AF008548CA /* DataofEmp.json */; };
+		55C078672359698A008548CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C078662359698A008548CA /* User.swift */; };
 		9B9D6A4F23567C11007E54A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A4E23567C11007E54A4 /* main.swift */; };
 		9B9D6A5723567D30007E54A4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5623567D30007E54A4 /* Vehicle.swift */; };
 		9B9D6A5923567D4C007E54A4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5823567D4C007E54A4 /* Car.swift */; };
@@ -21,6 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		55C07863235968AA008548CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				55C07864235968B2008548CA /* DataofEmp.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B9D6A4923567C11007E54A4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,7 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		55C07862235965AF008548CA /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		55C07862235965AF008548CA /* DataofEmp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataofEmp.json; sourceTree = "<group>"; };
+		55C078662359698A008548CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B9D6A4B23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group1_F2019_MAD3004_FP; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9D6A4E23567C11007E54A4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B9D6A5623567D30007E54A4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -59,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55C0786523596955008548CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55C078662359698A008548CA /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9B9D6A4223567C11007E54A4 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +99,12 @@
 		9B9D6A4D23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {
 			isa = PBXGroup;
 			children = (
+				55C0786523596955008548CA /* Models */,
 				9B9D6A5C23567D92007E54A4 /* Employee */,
 				9B9D6A5523567CE4007E54A4 /* Vehicles */,
 				9B9D6A4E23567C11007E54A4 /* main.swift */,
 				9B9D6A6A23567E76007E54A4 /* IPrintable.swift */,
-				55C07862235965AF008548CA /* Data.json */,
+				55C07862235965AF008548CA /* DataofEmp.json */,
 			);
 			path = Group1_F2019_MAD3004_FP;
 			sourceTree = "<group>";
@@ -120,6 +142,7 @@
 				9B9D6A4723567C11007E54A4 /* Sources */,
 				9B9D6A4823567C11007E54A4 /* Frameworks */,
 				9B9D6A4923567C11007E54A4 /* CopyFiles */,
+				55C07863235968AA008548CA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -137,7 +160,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = MacStudent;
 				TargetAttributes = {
 					9B9D6A4A23567C11007E54A4 = {
@@ -174,6 +197,7 @@
 				9B9D6A6023567DF2007E54A4 /* CommissionBasedPartTime.swift in Sources */,
 				9B9D6A6423567E15007E54A4 /* FullTime.swift in Sources */,
 				9B9D6A6B23567E76007E54A4 /* IPrintable.swift in Sources */,
+				55C078672359698A008548CA /* User.swift in Sources */,
 				9B9D6A4F23567C11007E54A4 /* main.swift in Sources */,
 				9B9D6A6223567E06007E54A4 /* FixedBasedPartTime.swift in Sources */,
 				9B9D6A5E23567DD7007E54A4 /* Employee.swift in Sources */,
@@ -302,6 +326,7 @@
 		9B9D6A5323567C11007E54A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -311,6 +336,7 @@
 		9B9D6A5423567C11007E54A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
