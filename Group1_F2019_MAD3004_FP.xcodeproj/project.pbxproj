@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55C07862235965AF008548CA /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		9B9D6A4B23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group1_F2019_MAD3004_FP; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9D6A4E23567C11007E54A4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B9D6A5623567D30007E54A4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 				9B9D6A5523567CE4007E54A4 /* Vehicles */,
 				9B9D6A4E23567C11007E54A4 /* main.swift */,
 				9B9D6A6A23567E76007E54A4 /* IPrintable.swift */,
+				55C07862235965AF008548CA /* Data.json */,
 			);
 			path = Group1_F2019_MAD3004_FP;
 			sourceTree = "<group>";
