@@ -13,6 +13,7 @@ class Intern:Employee,IPrintable
     
    
     var schoolName:String
+    
     init(IName:String,IAge:Int,IEarning:Float,SchoolName:String)
     {
         self.schoolName=SchoolName
@@ -20,8 +21,8 @@ class Intern:Employee,IPrintable
     }
     
     func printMyData() {
-        print("Employee Is Intern")
-        print(" Name :\(name)\n","Age :\(age)\n","School :\(schoolName)")
+        print(" Employee Is Intern")
+        print(" Name :\(name)\n","Year Of Birth :\(yearofBirth)\n","School :\(schoolName)")
     }
    
     
