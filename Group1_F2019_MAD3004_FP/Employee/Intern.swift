@@ -23,7 +23,7 @@ class Intern:Employee,IPrintable
     
     func printMyData()
     {
-        print("Employee Is \(empType)")
+        print(" Employee Is \(empType)")
         print(" Name :\(name)\n","Year Of Birth :\(yearofBirth)\n","School :\(schoolName)")
     }
    
