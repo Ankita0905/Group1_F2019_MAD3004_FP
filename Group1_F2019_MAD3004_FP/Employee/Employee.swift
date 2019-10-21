@@ -18,6 +18,9 @@ class Employee{
         age = EmpAge
         earning = EmpEarning
     }
+    
+    
+    
     // created By Anikta and Karan
     //https://www.zerotoappstore.com/get-year-month-day-from-date-swift.html
     func calBirthYear() -> Int {
