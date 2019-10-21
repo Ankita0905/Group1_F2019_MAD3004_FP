@@ -8,7 +8,7 @@
 
 import Foundation
 
-var a = Intern(IName: "Karan", IAge: 23, IEarning: 1000.0, SchoolName: "Lambton")
+var a = Intern( IName: "Karan", IAge: 23, IEarning: 1000.0, SchoolName: "Lambton",IEmpType: "Intern")
 //print(a.calBirthYear())
 //a.printMyData()
 //var b=PartTime(PTEmpName: "Sandeep", PTEmpAge: 23, PTEmpEarning: 2000.0, Rate: 28, HoursWorked: 29)
@@ -39,30 +39,36 @@ func readJsonFileArray(jsonFileName: String)
              user = User()
              if let jsonDictionay =  userObject as? [String: Any]
              {
+               if let emptype = jsonDictionay["emptype"] as? String
+                {
+                    //print(emptype)
+                    user.emptype = emptype
+                }
                  if let name = jsonDictionay["name"] as? String
                  {
-                    // print(name)
+                     //print(name)
                      user.name = name
                  }
          
                  if let id = jsonDictionay["id"] as? Int
                  {
-                    // print(id)
+                     //print(id)
                      user.id = id
                  }
                 if let age = jsonDictionay["age"] as? Int
                 {
-                   // print(age)
+                    //print(age)
                     user.age = age
                 }
          
             }
             userList[user.name!] = user
-                       print("\n\n\n")
-            let ab=Intern(IName: user.name!, IAge: user.age!, IEarning: 1000.0, SchoolName: "Lambton")
-//            print(ab.calBirthYear())
-            ab.printMyData()
-
+                       
+            
+            
+            
+            
+            
         }
         
     }
