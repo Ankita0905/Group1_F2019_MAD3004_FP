@@ -13,17 +13,18 @@ class PartTime:Employee,IPrintable
     var hoursworked:Int
 
   
-    init(PTEmpName:String,PTEmpAge:Int,PTEmpEarning:Float,Rate:Float,HoursWorked:Int)
+    init(PTEmptype: String, PTEmpName:String,PTEmpAge:Int,PTEmpEarning:Float,Rate:Float,HoursWorked:Int)
     {
+        
         self.rate=Rate
         self.hoursworked=HoursWorked
-        super.init(EmpName:PTEmpName, EmpAge:PTEmpAge, EmpEarning:PTEmpEarning)
+        super.init(EmpName:PTEmpName, EmpAge:PTEmpAge, EmpEarning:PTEmpEarning, EmpType: PTEmptype)
     }
     
     
     func printMyData() {
-        print("Employee Is PartTime")
-        print(" Name :\(name)\n","Age :\(age)\n","Rate :\(rate)\n","Hours Worked :\(hoursworked)")
+        print("Employee Is \(empType)")
+        print("Name :\(name)\n","Age :\(age)\n","Rate :\(rate)\n","Hours Worked :\(hoursworked)")
     }
     
     
