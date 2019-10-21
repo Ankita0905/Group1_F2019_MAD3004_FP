@@ -11,6 +11,7 @@ class Employee{
     var name: String
     var age: Int
     var earning: Float = 1000.0
+    var empType : String
     var yearofBirth : Int
     {
         get {
@@ -22,11 +23,12 @@ class Employee{
         }
     }
     
-    init(EmpName:String,EmpAge:Int,EmpEarning:Float)
+    init(EmpName:String,EmpAge:Int,EmpEarning:Float,EmpType: String)
     {
         name = EmpName
         age = EmpAge
         earning = EmpEarning
+        empType=EmpType
     }
     
     
