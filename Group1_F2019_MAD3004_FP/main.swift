@@ -69,7 +69,13 @@ func readJsonFileArray(jsonFileName: String)
             let obj = Intern(IName: user.name!, IAge: user.age!, IEarning: 100.0, SchoolName: "Lambton", IEmpType: user.emptype!)
              obj.printMyData()
              }
-           
+           else if user.emptype=="PartTime"
+                      {
+                          print("\n\n\n")
+                          let PTobj = PartTime(PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: 34)
+                          PTobj.printMyData()
+                          
+                      }
             
             
             
