@@ -15,7 +15,6 @@ class PartTime:Employee,IPrintable
   
     init(PTEmptype: String, PTEmpName:String,PTEmpAge:Int,PTEmpEarning:Float,Rate:Float,HoursWorked:Int)
     {
-        
         self.rate=Rate
         self.hoursworked=HoursWorked
         super.init(EmpName:PTEmpName, EmpAge:PTEmpAge, EmpEarning:PTEmpEarning, EmpType: PTEmptype)
@@ -23,8 +22,8 @@ class PartTime:Employee,IPrintable
     
     
     func printMyData() {
-        print("Employee Is \(empType)")
-        print("Name :\(name)\n","Age :\(age)\n","Rate :\(rate)\n","Hours Worked :\(hoursworked)")
+        print(" Employee Is \(empType)")
+        print(" Name :\(name)\n"," Age :\(age)\n"," Rate :\(rate)\n"," Hours Worked :\(hoursworked)")
     }
     
     
