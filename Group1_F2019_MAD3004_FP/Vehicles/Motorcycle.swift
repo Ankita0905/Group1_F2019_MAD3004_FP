@@ -30,7 +30,6 @@ class Bike: Vehicle
     
     override func printMyData()
     {
-        
-        
+        super.printMyData()
     }
 }
