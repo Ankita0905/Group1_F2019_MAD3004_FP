@@ -7,8 +7,10 @@
 //
 
 import Foundation
+// by Kamal and Sandeep
 enum VehicleError: Error
 {
+    case InvalidPlateNum
 }
     enum commuteBy
 {
