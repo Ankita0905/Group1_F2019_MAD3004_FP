@@ -34,7 +34,7 @@ class Car: Vehicle
         {
             throw CarError.invalidNoOfDoors(noOfDoor: noOfDoor)
         }
-           self.noOfDoor=noOfDoor
+           self.noOfDoor = noOfDoor
            self.Convertable=Convertable
            self.carType=carType
         try super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)

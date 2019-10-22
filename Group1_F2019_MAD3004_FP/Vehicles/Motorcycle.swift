@@ -7,7 +7,8 @@
 //
 
 import Foundation
-// by Kamal and Sandeepenum BikeType
+// by Kamal and Sandeep
+enum BikeType
 {
     case sports
     case dualSports
