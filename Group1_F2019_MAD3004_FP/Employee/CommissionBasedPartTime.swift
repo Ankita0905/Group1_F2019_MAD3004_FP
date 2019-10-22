@@ -24,4 +24,10 @@ class CommissionBasedPartTime:PartTime
         let total = calHours()+(calHours()+commissionPer)/100
         print("Total Earnings : \(total)")
     }
+    
+    override func printMyData() {
+        super.printMyData()
+        print(calEarnings())
+    }
+
 }
