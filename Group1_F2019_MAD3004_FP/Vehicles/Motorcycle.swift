@@ -11,4 +11,6 @@ enum BikeType
 {
     case sports
     case dualSports
-    }
+    case cruiser
+    
+}
