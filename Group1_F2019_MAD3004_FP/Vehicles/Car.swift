@@ -28,6 +28,7 @@ class Car: Vehicle
     {
      self.noOfDoor=noOfDoor
  self.Convertable=Convertable
+        super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
     }
     
 
