@@ -9,4 +9,6 @@
 import Foundation
 enum BikeType
 {
+    case sports
+    
 }
