@@ -17,7 +17,11 @@ class FullTime:Employee,IPrintable
     {
         self.salary=Salary
         self.bonus=Bonus
+        super.init(EmpID: PTEmpID,EmpName:PTEmpName, EmpAge:PTEmpAge, EmpEarning:PTEmpEarning, EmpType: PTEmptype)
     }
+    
+    
+    
     
     
     
