@@ -18,5 +18,7 @@ class Bike: Vehicle
 {
     
     var type: BikeType
+    var maxSpeed: Float
+   
    
 }
