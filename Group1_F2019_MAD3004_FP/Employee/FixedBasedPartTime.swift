@@ -7,3 +7,17 @@
 //
 
 import Foundation
+class FixedBasedPartTime:PartTime
+{
+    var fixedAmount:Float
+    
+    init(FixTEmpID: Int, FixTEmptype: String, FixTEmpName: String, FixTEmpAge: Int, FixTEmpEarning: Float, Rate: Float, HoursWorked: Float,FixedAmount:Float) {
+        self.fixedAmount=FixedAmount
+        super.init(PTEmpID: FixTEmpID, PTEmptype: FixTEmptype, PTEmpName: FixTEmpName, PTEmpAge: FixTEmpAge, PTEmpEarning: FixTEmpEarning, Rate: Rate, HoursWorked: HoursWorked)
+    }
+    
+    override func calEarnings() {
+        var total=rate * hoursworked + fixedAmount
+        print("Toatl Earnings : \(total)")
+    }
+}

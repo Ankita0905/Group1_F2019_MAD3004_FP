@@ -10,10 +10,10 @@ import Foundation
 class PartTime:Employee,IPrintable
 {
     var rate:Float
-    var hoursworked:Int
+    var hoursworked:Float
 
   
-    init(PTEmpID: Int,PTEmptype: String, PTEmpName:String,PTEmpAge:Int,PTEmpEarning:Float,Rate:Float,HoursWorked:Int)
+    init(PTEmpID: Int,PTEmptype: String, PTEmpName:String,PTEmpAge:Int,PTEmpEarning:Float,Rate:Float,HoursWorked:Float)
     {
         self.rate=Rate
         self.hoursworked=HoursWorked
