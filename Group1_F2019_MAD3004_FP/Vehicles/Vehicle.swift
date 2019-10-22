@@ -14,5 +14,6 @@ enum VehicleError: Error
 }
 class Vehicle
 {
-var eId: Int
+    var eId: Int
+    var  make: String
 }
