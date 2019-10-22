@@ -12,6 +12,11 @@ class Employee{
     var name: String
     var age: Int
     var earning: Float
+    {
+        get {
+            return self.earning
+        }
+    }
     var empType : String
     var yearofBirth : Int
     
@@ -25,12 +30,11 @@ class Employee{
         }
     }
     
-    init(EmpID : Int,EmpName:String,EmpAge:Int,EmpEarning:Float,EmpType: String)
+    init(EmpID : Int,EmpName:String,EmpAge:Int,EmpType: String)
     {
         empID=EmpID
         name = EmpName
         age = EmpAge
-        earning = EmpEarning
         empType=EmpType
     }
     
