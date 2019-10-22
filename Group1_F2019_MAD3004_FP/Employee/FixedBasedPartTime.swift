@@ -11,8 +11,7 @@ class FixedBasedPartTime:PartTime
 {
     var fixedAmount:Float
     
-    override init(PTEmpID: Int, PTEmptype: String, PTEmpName: String, PTEmpAge: Int, PTEmpEarning: Float, Rate: Float, HoursWorked: Int,FixedAmount:Float) {
-        self.fixedAmount=FixedAmount
-        super .init(PTEmpID: <#T##Int#>, PTEmptype: <#T##String#>, PTEmpName: <#T##String#>, PTEmpAge: <#T##Int#>, PTEmpEarning: <#T##Float#>, Rate: <#T##Float#>, HoursWorked: <#T##Int#>)
+    init(FixTEmpID: Int, FixTEmptype: String, FixTEmpName: String, FixTEmpAge: Int, FixTEmpEarning: Float, Rate: Float, HoursWorked: Int,FixedAmount:Float) {
+        
     }
 }
