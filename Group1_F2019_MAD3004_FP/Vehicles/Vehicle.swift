@@ -30,6 +30,9 @@ class Vehicle
     {
         self.eId=eId
         self.make=make
+        self.model=model
+        self.plateNum=plateNum
+
     }
 
 }
