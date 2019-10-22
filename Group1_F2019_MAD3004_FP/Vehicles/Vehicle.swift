@@ -29,6 +29,7 @@ class Vehicle
     init(eId : Int , make : String, model : String, plateNum: String, CommBY: commuteBy )
     {
         self.eId=eId
+        self.make=make
     }
 
 }
