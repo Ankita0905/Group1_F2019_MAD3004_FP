@@ -31,6 +31,6 @@ class Bike: Vehicle
     override func printMyData()
     {
         super.printMyData()
-        print("rides \(type) Bike of maxSpeed \(maxSpeed) ")
+        print("rides \(type) Bike with maxSpeed \(maxSpeed) ")
     }
 }
