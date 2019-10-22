@@ -65,13 +65,13 @@ func readJsonFileArray(jsonFileName: String)
             userList[user.name!] = user
                        
             if user.emptype == "Intern"{
-                        print("\n\n\n")
+                      //  print("\n\n\n")
                 let obj = Intern(IempID: user.id!,IName: user.name!, IAge: user.age!, IEarning: 100.0, SchoolName: "Lambton", IEmpType: user.emptype!)
                         obj.printMyData()
              }
            else if user.emptype=="PartTime"
                       {
-                          print("\n\n\n")
+                         // print("\n\n")
                         let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: 34)
                           PTobj.printMyData()
                           

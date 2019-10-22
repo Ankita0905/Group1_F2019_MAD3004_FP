@@ -23,7 +23,7 @@ class PartTime:Employee,IPrintable
     
     func printMyData() {
         print(" Employee Is \(empType)")
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Rate :\(rate)\n","Hours Worked :\(hoursworked)")
+        print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Rate :\(rate)\n","Hours Worked :\(hoursworked)\n")
     }
     
     
