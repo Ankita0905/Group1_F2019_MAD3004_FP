@@ -48,8 +48,7 @@ class Employee{
 //
 //    }
     
-//   func calEarnings() -> <#return type#>
-//   {
-//       <#function body#>
-//   }
+    func calEarnings() {
+        
+    }
 }

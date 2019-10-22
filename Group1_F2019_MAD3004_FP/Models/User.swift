@@ -12,4 +12,5 @@ struct User {
     var id: Int?
     var name: String?
     var age: Int?
+    var hourswork:Int?
 }
