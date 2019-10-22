@@ -22,6 +22,8 @@ class Bike: Vehicle
     init(type: BikeType, maxSpeed: Float, noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: CommuteBy)
     {
         self.type=type
+        self.maxSpeed=maxSpeed
+       
       
     }
 }
