@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 enum BikeType
 {
     case sports
@@ -19,8 +20,9 @@ class Bike: Vehicle
     
     var type: BikeType
     var maxSpeed: Float
-    init(type: BikeType, maxSpeed: Float, noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy)
+    init(type: BikeType, maxSpeed: Float, noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy) throws
     {
+      
         self.type=type
         self.maxSpeed=maxSpeed
         super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)

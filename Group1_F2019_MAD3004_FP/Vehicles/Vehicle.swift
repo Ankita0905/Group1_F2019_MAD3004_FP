@@ -9,10 +9,8 @@
 import Foundation
 enum VehicleError: Error
 {
-    case InvalidPlateNum
-    case InvalidModelNum
 }
-enum commuteBy
+    enum commuteBy
 {
     case car
     case bike
