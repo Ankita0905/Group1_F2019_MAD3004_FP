@@ -14,3 +14,6 @@ enum BikeType
     case cruiser
     
 }
+class Bike: Vehicle
+{
+}
