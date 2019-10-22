@@ -16,4 +16,11 @@ class CommisionBAsedPartTime:PartTime
         self.commissionPer=CommissionPer
         super.init(PTEmpID: ComTEmpID, PTEmptype: ComTEmptype, PTEmpName: ComTEmpName, PTEmpAge: ComTEmpAge, PTEmpEarning: ComTEmpEarning, Rate: Rate, HoursWorked: HoursWorked)
     }
+    
+    func calHours()->Float
+    {
+        return rate*hoursworked
+    }
+
+    
 }
