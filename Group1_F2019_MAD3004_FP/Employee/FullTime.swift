@@ -9,7 +9,11 @@
 import Foundation
 class FullTime:Employee,IPrintable
 {
+    var salary:Float
+    var bonus:Float
     
+    
+   
     
     
     
