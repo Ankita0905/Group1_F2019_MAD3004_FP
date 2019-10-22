@@ -17,5 +17,7 @@ class Vehicle
     var eId: Int
     var make: String
     var model: String
+    var  plateNum: String
+
 
 }
