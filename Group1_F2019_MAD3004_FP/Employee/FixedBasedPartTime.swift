@@ -20,4 +20,8 @@ class FixedBasedPartTime:PartTime
         var total=rate * hoursworked + fixedAmount
         print("Toatl Earnings : \(total)")
     }
+    override func printMyData() {
+        super.printMyData()
+        print("Total Earnings : \(total)")
+    }
 }
