@@ -62,7 +62,9 @@ class Car: Vehicle
         func printMyData()
         {
             super.printMyData()
-            print("rides  Bike with maxSpeed  ")        }
+            print("Drives \(carType)   ")
+            print("\(carType) has \(noOfDoor)")
+        }
     
     
     
