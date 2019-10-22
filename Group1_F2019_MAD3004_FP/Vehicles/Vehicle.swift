@@ -29,16 +29,22 @@ class Vehicle
   
     var CommBY: commuteBy
     
-    init(eId : Int , make : String, model : String, plateNum: String, CommBY: commuteBy )
+    init(eId : Int , make : String, model : String, plateNum: String, CommBY: commuteBy ) throws
     {
         self.eId=eId
         self.make=make
         self.model=model
+        if plateNum.count<6
+        {
+            throw VehicleError.InvalidPlateNum(plateNum: plateNum)
+        }
         self.plateNum=plateNum
         self.CommBY=CommBY
 
 
     }
+    
+    
     
      func printMyData()
      {
