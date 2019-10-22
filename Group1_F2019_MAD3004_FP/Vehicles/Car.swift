@@ -13,10 +13,12 @@ enum CarError: Error
 
 enum cartype
 {
+    case manual
+    case Automatic
 }
 
 
-}
+
 class Car: Vehicle
 {
     var noOfDoor: Int
