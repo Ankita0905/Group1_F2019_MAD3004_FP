@@ -24,7 +24,7 @@ class Intern:Employee,IPrintable
     func printMyData()
     {
         print(" Employee Is \(empType)")
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)\n","School :\(schoolName)")
+        print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)\n","School :\(schoolName)\n")
     }
    
     
