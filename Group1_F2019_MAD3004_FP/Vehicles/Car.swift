@@ -64,6 +64,7 @@ class Car: Vehicle
             super.printMyData()
             print("Drives \(carType)   ")
             print("\(carType) has \(noOfDoor)")
+            print("\(carType) is \(Convertable)")
         }
     
     
