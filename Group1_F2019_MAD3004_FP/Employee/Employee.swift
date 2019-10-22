@@ -8,11 +8,13 @@
 
 import Foundation
 class Employee{
+    var empID : Int
     var name: String
     var age: Int
     var earning: Float = 1000.0
     var empType : String
     var yearofBirth : Int
+    
     {
         get {
                     let date = Date()
@@ -23,8 +25,9 @@ class Employee{
         }
     }
     
-    init(EmpName:String,EmpAge:Int,EmpEarning:Float,EmpType: String)
+    init(EmpID : Int,EmpName:String,EmpAge:Int,EmpEarning:Float,EmpType: String)
     {
+        empID=EmpID
         name = EmpName
         age = EmpAge
         earning = EmpEarning
