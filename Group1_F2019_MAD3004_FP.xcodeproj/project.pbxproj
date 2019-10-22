@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		55C07864235968B2008548CA /* DataofEmp.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C07862235965AF008548CA /* DataofEmp.json */; };
 		55C078672359698A008548CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C078662359698A008548CA /* User.swift */; };
+		9B97B1C8235F873900C2C017 /* Vehivle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1C7235F873900C2C017 /* Vehivle.swift */; };
 		9B9D6A4F23567C11007E54A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A4E23567C11007E54A4 /* main.swift */; };
 		9B9D6A5723567D30007E54A4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5623567D30007E54A4 /* Vehicle.swift */; };
 		9B9D6A5923567D4C007E54A4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9D6A5823567D4C007E54A4 /* Car.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		55C07862235965AF008548CA /* DataofEmp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataofEmp.json; sourceTree = "<group>"; };
 		55C078662359698A008548CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9B97B1C7235F873900C2C017 /* Vehivle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehivle.swift; sourceTree = "<group>"; };
 		9B9D6A4B23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group1_F2019_MAD3004_FP; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9D6A4E23567C11007E54A4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B9D6A5623567D30007E54A4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				9B9D6A5623567D30007E54A4 /* Vehicle.swift */,
 				9B9D6A5823567D4C007E54A4 /* Car.swift */,
 				9B9D6A5A23567D6A007E54A4 /* Motorcycle.swift */,
+				9B97B1C7235F873900C2C017 /* Vehivle.swift */,
 			);
 			path = Vehicles;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				9B9D6A5723567D30007E54A4 /* Vehicle.swift in Sources */,
 				9B9D6A6923567E40007E54A4 /* PartTime.swift in Sources */,
 				9B9D6A6023567DF2007E54A4 /* CommissionBasedPartTime.swift in Sources */,
+				9B97B1C8235F873900C2C017 /* Vehivle.swift in Sources */,
 				9B9D6A6423567E15007E54A4 /* FullTime.swift in Sources */,
 				9B9D6A6B23567E76007E54A4 /* IPrintable.swift in Sources */,
 				55C078672359698A008548CA /* User.swift in Sources */,
