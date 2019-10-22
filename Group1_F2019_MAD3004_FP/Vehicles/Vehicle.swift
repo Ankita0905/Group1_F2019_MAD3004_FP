@@ -10,4 +10,5 @@ import Foundation
 enum VehicleError: Error
 {
     case InvalidPlateNum
+    case InvalidModelNum
 }
