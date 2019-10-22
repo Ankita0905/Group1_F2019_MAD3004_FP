@@ -12,7 +12,11 @@ enum VehicleError: Error
     case InvalidPlateNum
     case InvalidModelNum
 }
-
+enum commuteBy
+{
+    case car
+    case bike
+}
 
 class Vehicle
 {
@@ -20,11 +24,7 @@ class Vehicle
     var make: String
     var model: String
     var  plateNum: String
-    enum commuteBy
-    {
-        case car
-        case bike
-    }
+  
     var CommBY: commuteBy
     
     init(eId : Int , make : String, model : String, plateNum: String, CommBY: commuteBy )

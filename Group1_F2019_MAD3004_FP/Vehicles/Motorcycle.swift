@@ -19,7 +19,7 @@ class Bike: Vehicle
     
     var type: BikeType
     var maxSpeed: Float
-    init(type: BikeType, maxSpeed: Float, noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: CommuteBy)
+    init(type: BikeType, maxSpeed: Float, noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy)
     {
         self.type=type
         self.maxSpeed=maxSpeed
