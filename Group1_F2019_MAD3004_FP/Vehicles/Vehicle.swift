@@ -12,3 +12,7 @@ enum VehicleError: Error
     case InvalidPlateNum
     case InvalidModelNum
 }
+class Vehicle
+{
+var eId: Int
+}
