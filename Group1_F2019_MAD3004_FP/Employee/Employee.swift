@@ -11,7 +11,7 @@ class Employee{
     var empID : Int
     var name: String
     var age: Int
-    var earning: Float = 1000.0
+    var earning: Float
     var empType : String
     var yearofBirth : Int
     
@@ -48,7 +48,8 @@ class Employee{
 //
 //    }
     
-    func calEarnings() {
-        
+    func calEarnings()->Float
+    {
+        return 1000
     }
 }
