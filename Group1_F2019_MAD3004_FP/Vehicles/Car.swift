@@ -43,7 +43,8 @@ class Car: Vehicle
     {
     print("Inavlid Update Name : \(noOfDoor)")
     }*/
-        func SetFacultyNam(name: Int) throws {
+        func SetFacultyNam(name: Int) throws
+        {
             do{
                 if noOfDoor > 4
                 {
@@ -51,15 +52,19 @@ class Car: Vehicle
                 }
                self.noOfDoor=noOfDoor
                 
-            }
+              }
             catch CarError.invalidNoOfDoors(let facultyName)
             {
                 print("Inavlid Update Name : \(facultyName)")
             }
-            
-            
-            
+        }
+
+        func printMyData()
+        {
             
         }
-}
+    
+    
+    
+    }
 }
