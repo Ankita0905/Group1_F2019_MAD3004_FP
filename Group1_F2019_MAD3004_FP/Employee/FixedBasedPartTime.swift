@@ -12,6 +12,7 @@ class FixedBasedPartTime:PartTime
     var fixedAmount:Float
     
     init(FixTEmpID: Int, FixTEmptype: String, FixTEmpName: String, FixTEmpAge: Int, FixTEmpEarning: Float, Rate: Float, HoursWorked: Int,FixedAmount:Float) {
-        
+        self.fixedAmount=FixedAmount
+        super.init(PTEmpID: FixTEmpID, PTEmptype: FixTEmptype, PTEmpName: FixTEmpName, PTEmpAge: FixTEmpAge, PTEmpEarning: FixTEmpEarning, Rate: Rate, HoursWorked: HoursWorked)
     }
 }
