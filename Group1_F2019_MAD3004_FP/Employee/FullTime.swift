@@ -23,13 +23,13 @@ class FullTime:Employee,IPrintable
     
     func printMyData() {
         print(" Employee Is \(empType)")
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Salary :\(salary)\n","Bonus :\(bonus)\n")
+        print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Salary :\(salary)\n","Bonus :\(bonus)\n","Total Earnings :\(calEarnings())")
     }
     
-    override func calEarnings()
+    override func calEarnings()->Float
     {
-    let total=salary+bonus
-        print("Total Earnings : \(total)")
+   return salary+bonus
+        
         
     }
     
