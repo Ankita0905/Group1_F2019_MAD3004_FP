@@ -26,6 +26,11 @@ class Bike: Vehicle
         self.type=type
         self.maxSpeed=maxSpeed
          try super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
-      
+    }
+    
+    override func printMyData()
+    {
+        
+        
     }
 }
