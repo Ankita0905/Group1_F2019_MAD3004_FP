@@ -20,7 +20,7 @@ class Bike: Vehicle
     
     var type: BikeType
     var maxSpeed: Float
-    init(type: BikeType, maxSpeed: Float,eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy) throws
+    init(eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy,type: BikeType, maxSpeed: Float) throws
     {
       
         self.type=type
