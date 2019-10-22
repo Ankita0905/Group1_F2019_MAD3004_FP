@@ -61,6 +61,7 @@ class Car: Vehicle
 
         func printMyData()
         {
+            super.printMyData()
             
         }
     
