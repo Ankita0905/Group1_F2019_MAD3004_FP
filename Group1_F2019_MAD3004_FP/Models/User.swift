@@ -13,4 +13,6 @@ struct User {
     var name: String?
     var age: Int?
     var hourswork:Float?
+    var rate: Float?
+    var commssion: Float?
 }
