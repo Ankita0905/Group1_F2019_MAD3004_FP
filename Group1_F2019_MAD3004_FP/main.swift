@@ -60,6 +60,11 @@ func readJsonFileArray(jsonFileName: String)
                     //print(age)
                     user.age = age
                 }
+                if let hrs = jsonDictionay["hoursworked"] as? Int
+                               {
+                                   //print(age)
+                                   user.hourswork = hrs
+                               }
          
             }
             userList[user.name!] = user
@@ -72,7 +77,7 @@ func readJsonFileArray(jsonFileName: String)
            else if user.emptype=="PartTime"
                       {
                          // print("\n\n")
-                        let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: 34)
+                        let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
                           PTobj.printMyData()
                           
                       }
