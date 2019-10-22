@@ -7,6 +7,8 @@
 //
 
 import Foundation
+
+// by Kamal and Sandeep
 enum CarError: Error
 {
     case invalidNoOfDoors(noOfDoor: Int)
@@ -26,7 +28,7 @@ class Car: Vehicle
     var noOfDoor: Int
     var Convertable: Bool
     var carType: CarType
-    init(noOfDoor: Int, Convertable: Bool, carType: CarType, eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy) throws
+    init(eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy, noOfDoor: Int, Convertable: Bool, carType: CarType) throws
     {
         if noOfDoor > 4
         {
