@@ -24,6 +24,7 @@ class Vehicle
     var make: String
     var model: String
     var  plateNum: String
+  
     var CommBY: commuteBy
     
     init(eId : Int , make : String, model : String, plateNum: String, CommBY: commuteBy )

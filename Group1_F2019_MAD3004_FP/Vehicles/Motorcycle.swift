@@ -9,4 +9,21 @@
 import Foundation
 enum BikeType
 {
+    case sports
+    case dualSports
+    case cruiser
+    
+}
+class Bike: Vehicle
+{
+    
+    var type: BikeType
+    var maxSpeed: Float
+    init(type: BikeType, maxSpeed: Float, noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy)
+    {
+        self.type=type
+        self.maxSpeed=maxSpeed
+        super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
+      
+    }
 }
