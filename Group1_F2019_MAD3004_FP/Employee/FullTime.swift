@@ -28,7 +28,7 @@ class FullTime:Employee,IPrintable
     
     override func calEarnings()
     {
-      var total=salary+bonus
+    let total=salary+bonus
         print("Total Earnings : \(total)")
         
     }

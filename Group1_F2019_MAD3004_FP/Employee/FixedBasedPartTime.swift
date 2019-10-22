@@ -17,7 +17,7 @@ class FixedBasedPartTime:PartTime
     }
     
     override func calEarnings() {
-        var total=rate * hoursworked + fixedAmount
+        let total=rate * hoursworked + fixedAmount
         print("Toatl Earnings : \(total)")
     }
     override func printMyData() {
