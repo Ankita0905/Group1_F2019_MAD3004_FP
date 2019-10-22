@@ -7,3 +7,10 @@
 //
 
 import Foundation
+class FullTime:Employee,IPrintable
+{
+    
+    
+    
+    
+}
