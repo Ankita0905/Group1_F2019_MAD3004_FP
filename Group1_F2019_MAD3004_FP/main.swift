@@ -8,7 +8,7 @@
 
 import Foundation
 
-var a = Intern( IName: "Karan", IAge: 23, IEarning: 1000.0, SchoolName: "Lambton",IEmpType: "Intern")
+//var a = Intern( IName: "Karan", IAge: 23, IEarning: 1000.0, SchoolName: "Lambton",IEmpType: "Intern")
 //print(a.calBirthYear())
 //a.printMyData()
 //var b=PartTime(PTEmpName: "Sandeep", PTEmpAge: 23, PTEmpEarning: 2000.0, Rate: 28, HoursWorked: 29)
@@ -66,13 +66,13 @@ func readJsonFileArray(jsonFileName: String)
                        
             if user.emptype == "Intern"{
                         print("\n\n\n")
-                        let obj = Intern(IName: user.name!, IAge: user.age!, IEarning: 100.0, SchoolName: "Lambton", IEmpType: user.emptype!)
+                let obj = Intern(IempID: user.id!,IName: user.name!, IAge: user.age!, IEarning: 100.0, SchoolName: "Lambton", IEmpType: user.emptype!)
                         obj.printMyData()
              }
            else if user.emptype=="PartTime"
                       {
                           print("\n\n\n")
-                          let PTobj = PartTime(PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: 34)
+                        let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: 34)
                           PTobj.printMyData()
                           
                       }
