@@ -32,6 +32,8 @@ class Vehicle
         self.make=make
         self.model=model
         self.plateNum=plateNum
+        self.CommBY=CommBY
+
 
     }
 
