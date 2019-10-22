@@ -16,4 +16,7 @@ enum BikeType
 }
 class Bike: Vehicle
 {
+    
+    var type: BikeType
+   
 }
