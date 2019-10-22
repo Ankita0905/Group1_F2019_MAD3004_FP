@@ -23,8 +23,7 @@ class Car: Vehicle
 {
   
     var noOfDoor: Int
-
-
-
+    var Convertable: Bool
+    
 
 }
