@@ -24,6 +24,8 @@ class Vehicle
     var make: String
     var model: String
     var  plateNum: String
+    var CommBY: commuteBy
+
 
 
 }
