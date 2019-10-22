@@ -16,7 +16,10 @@
         "id": 3,
         "name": "Clementine Bauch",
         "age": 34,
-        "hoursworked": 12
+        "hoursworked": 12,
+        "rate": 20,
+        "comission":5
+        
     },
     {"emptype": "Intern",
         "id": 4,

@@ -61,11 +61,21 @@ func readJsonFileArray(jsonFileName: String)
                     user.age = age
                 }
                 if let hrs = jsonDictionay["hoursworked"] as? Float
-                               {
-                                   //print(age)
-                                   user.hourswork = hrs
-                               }
-         
+                {
+                    //print(hrs)
+                    user.hourswork = hrs
+                }
+                if let ComPTrate = jsonDictionay["rate"] as? Float
+                {
+                    //print(ComPTrate)
+                    user.rate = ComPTrate
+                }
+                if let ComPTcommission = jsonDictionay["comission"] as? Float
+                {
+                   // print(ComPTcommission)
+                    user.commssion = ComPTcommission
+                }
+                
             }
             userList[user.name!] = user
                        
@@ -77,10 +87,15 @@ func readJsonFileArray(jsonFileName: String)
            else if user.emptype=="PartTime"
                       {
                          // print("\n\n")
-                        let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, PTEmpEarning: 100.1, Rate: 23, HoursWorked: user.hourswork!)
+                        let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, Rate: 23, HoursWorked: user.hourswork!)
                           PTobj.printMyData()
                           
                       }
+           else if user.emptype=="ComPartTime"
+            {
+                let ComPTobj = CommissionBasedPartTime(ComTEmpID: user.id!, ComTEmptype: user.emptype!, ComTEmpName: user.name!, ComTEmpAge: user.age!, Rate: user.rate!, HoursWorked: user.hourswork!, CommissionPer: user.commssion!)
+                ComPTobj.printMyData()
+            }
             
             
             

@@ -10,10 +10,10 @@ import Foundation
 class CommissionBasedPartTime:PartTime
 {
     var commissionPer:Float
-    init(ComTEmpID: Int, ComTEmptype: String, ComTEmpName: String, ComTEmpAge: Int, ComTEmpEarning: Float, Rate: Float, HoursWorked: Float,CommissionPer:Float)
+    init(ComTEmpID: Int, ComTEmptype: String, ComTEmpName: String, ComTEmpAge: Int, Rate: Float, HoursWorked: Float,CommissionPer:Float)
     {
         self.commissionPer=CommissionPer
-        super.init(PTEmpID: ComTEmpID, PTEmptype: ComTEmptype, PTEmpName: ComTEmpName, PTEmpAge: ComTEmpAge, PTEmpEarning: ComTEmpEarning, Rate: Rate, HoursWorked: HoursWorked)
+        super.init(PTEmpID: ComTEmpID, PTEmptype: ComTEmptype, PTEmpName: ComTEmpName, PTEmpAge: ComTEmpAge, Rate: Rate, HoursWorked: HoursWorked)
     }
     func calHours()->Float
     {
@@ -21,13 +21,14 @@ class CommissionBasedPartTime:PartTime
     }
     
     override func calEarnings()->Float {
-       return calHours()+(calHours()+commissionPer)/100
+       return ((calHours()*commissionPer)/100)+calHours()
         
     }
     
     override func printMyData() {
         super.printMyData()
-       print("Total Earnings : \(calEarnings())")
+        print(" Comission % :\(commissionPer)")
+       print(" Total Earnings : \(calEarnings())\n")
     }
 
 }
