@@ -9,5 +9,10 @@
 import Foundation
 class CommissionBasedPartTime:PartTime
 {
-    
+    var commissionPer:Float
+    init(ComTEmpID: Int, ComTEmptype: String, ComTEmpName: String, ComTEmpAge: Int, ComTEmpEarning: Float, Rate: Float, HoursWorked: Float,CommissionPer:Float)
+    {
+        self.commissionPer=CommissionPer
+        
+    }
 }
