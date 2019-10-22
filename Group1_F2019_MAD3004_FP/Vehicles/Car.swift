@@ -21,5 +21,10 @@ enum cartype
 
 class Car: Vehicle
 {
-   
+  
+    var noOfDoor: Int
+
+
+
+
 }
