@@ -26,7 +26,12 @@ class FullTime:Employee,IPrintable
         print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Salary :\(salary)\n","Bonus :\(bonus)\n")
     }
     
-   
+    override func calEarnings()
+    {
+       let total=salary+bonus
+        print("Total Earnings : \(total)")
+        
+    }
     
     
     
