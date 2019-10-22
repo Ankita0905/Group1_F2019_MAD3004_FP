@@ -16,12 +16,12 @@ class FixedBasedPartTime:PartTime
         super.init(PTEmpID: FixTEmpID, PTEmptype: FixTEmptype, PTEmpName: FixTEmpName, PTEmpAge: FixTEmpAge, PTEmpEarning: FixTEmpEarning, Rate: Rate, HoursWorked: HoursWorked)
     }
     
-    override func calEarnings() {
-        let total=rate * hoursworked + fixedAmount
-        print("Toatl Earnings : \(total)")
+    override func calEarnings()->Float {
+        return rate * hoursworked + fixedAmount
+        
     }
     override func printMyData() {
         super.printMyData()
-        print(calEarnings())
+       print("Toatl Earnings : \(calEarnings())")
     }
 }
