@@ -15,4 +15,9 @@ class FixedBasedPartTime:PartTime
         self.fixedAmount=FixedAmount
         super.init(PTEmpID: FixTEmpID, PTEmptype: FixTEmptype, PTEmpName: FixTEmpName, PTEmpAge: FixTEmpAge, PTEmpEarning: FixTEmpEarning, Rate: Rate, HoursWorked: HoursWorked)
     }
+    
+    override func calEarnings() {
+        var total=rate * hoursworked + fixedAmount
+        print("Toatl Earnings : \(total)")
+    }
 }
