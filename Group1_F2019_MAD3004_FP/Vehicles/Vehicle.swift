@@ -10,7 +10,9 @@ import Foundation
 // by Kamal and Sandeep
 enum VehicleError: Error
 {
-    case InvalidPlateNum
+    case InvalidPlateNum(plateNum: String)
+
+
 }
     enum commuteBy
 {
