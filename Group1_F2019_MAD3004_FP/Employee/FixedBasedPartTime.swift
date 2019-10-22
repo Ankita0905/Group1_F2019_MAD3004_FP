@@ -22,6 +22,6 @@ class FixedBasedPartTime:PartTime
     }
     override func printMyData() {
         super.printMyData()
-        print("Total Earnings : \(total)")
+        print(calEarnings())
     }
 }
