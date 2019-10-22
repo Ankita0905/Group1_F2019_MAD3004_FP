@@ -27,5 +27,6 @@ class Intern:Employee,IPrintable
         print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)\n","School :\(schoolName)\n")
     }
    
+   
     
 }
