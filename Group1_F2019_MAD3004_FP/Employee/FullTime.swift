@@ -13,7 +13,11 @@ class FullTime:Employee,IPrintable
     var bonus:Float
     
     
-   
+    init(PTEmpID: Int,PTEmptype: String, PTEmpName:String,PTEmpAge:Int,PTEmpEarning:Float,Salary:Float,Bonus:Float)
+    {
+        self.salary=Salary
+        self.bonus=Bonus
+    }
     
     
     
