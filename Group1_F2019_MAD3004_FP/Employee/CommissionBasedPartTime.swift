@@ -7,4 +7,7 @@
 //
 
 import Foundation
-
+class CommissionBasedPartTime:PartTime
+{
+    
+}
