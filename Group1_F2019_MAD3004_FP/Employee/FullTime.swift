@@ -21,7 +21,12 @@ class FullTime:Employee,IPrintable
     }
     
     
+    func printMyData() {
+        print(" Employee Is \(empType)")
+        print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Salary :\(salary)\n","Bonus :\(bonus)\n")
+    }
     
+   
     
     
     
