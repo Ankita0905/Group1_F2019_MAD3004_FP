@@ -35,7 +35,7 @@ class Car: Vehicle
            self.noOfDoor=noOfDoor
            self.Convertable=Convertable
            self.carType=carType
-           super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
+        try super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
     
     
     

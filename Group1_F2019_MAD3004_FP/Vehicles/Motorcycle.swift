@@ -20,12 +20,17 @@ class Bike: Vehicle
     
     var type: BikeType
     var maxSpeed: Float
-    init(type: BikeType, maxSpeed: Float, noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy) throws
+    init(type: BikeType, maxSpeed: Float,eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy) throws
     {
       
         self.type=type
         self.maxSpeed=maxSpeed
-        super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
-      
+         try super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
+    }
+    
+    override func printMyData()
+    {
+        super.printMyData()
+        print("rides \(type) Bike of maxSpeed \(maxSpeed) ")
     }
 }
