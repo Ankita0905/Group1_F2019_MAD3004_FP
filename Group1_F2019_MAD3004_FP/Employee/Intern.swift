@@ -17,7 +17,7 @@ class Intern:Employee,IPrintable
     init(IempID:Int,IName:String,IAge:Int,IEarning:Float,SchoolName:String,IEmpType: String)
     {
         self.schoolName=SchoolName
-        super.init(EmpID: IempID, EmpName: IName, EmpAge: IAge, EmpEarning: IEarning, EmpType: IEmpType)
+        super.init(EmpID: IempID, EmpName: IName, EmpAge: IAge,  EmpType: IEmpType)
         //super.init(Emptype : IEmpType,EmpName: IName, EmpAge: IAge, EmpEarning: IEarning)
     }
     
