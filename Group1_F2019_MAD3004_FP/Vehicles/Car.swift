@@ -21,11 +21,5 @@ enum cartype
 
 class Car: Vehicle
 {
-    var noOfDoor: Int
-    var Convertable: Bool
-    init(noOfDoor: Int, Convertable: Bool, eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy)
-    {
-        self.noOfDoor=noOfDoor
-        self.Convertable=Convertable
-        super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
+   
 }
