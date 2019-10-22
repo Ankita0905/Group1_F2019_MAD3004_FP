@@ -22,5 +22,9 @@ class CommisionBAsedPartTime:PartTime
         return rate*hoursworked
     }
 
-    
+    override func calEarnings() {
+        var calHrs=calHours()+((calHours()*commissionPer)/100)
+        print("Total Earnings : \(calHrs)")
+        
+    }
 }
