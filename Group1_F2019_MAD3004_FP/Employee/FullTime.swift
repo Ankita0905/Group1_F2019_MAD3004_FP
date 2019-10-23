@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class FullTime:Employee,IPrintable
+class FullTime:Employee
 {
     var salary:Float
     var bonus:Float
@@ -21,9 +21,10 @@ class FullTime:Employee,IPrintable
     }
     
     
-    func printMyData() {
+    override func printMyData() {
         print(" Employee Is \(empType)")
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Salary :\(salary)\n","Bonus :\(bonus)\n","Total Earnings :\(calEarnings())")
+        super.printMyData()
+        print("Salary :\(salary)\n","Bonus :\(bonus)\n","Total Earnings :\(calEarnings())")
     }
     
     override func calEarnings()->Float
