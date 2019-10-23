@@ -8,19 +8,13 @@
 
 import Foundation
 // by Kamal and Sandeep
-enum BikeType
-{
-    case sports
-    case dualSports
-    case cruiser
-    
-}
+
 class Bike: Vehicle
 {
     
-    var type: BikeType
+    var type: String
     var maxSpeed: Float
-    init(type: BikeType, maxSpeed: Float,eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy) throws
+    init(type: String, maxSpeed: Float,eId: Int, make : String, model : String, plateNum: String, CommBY: String) throws
     {
       
         self.type=type
