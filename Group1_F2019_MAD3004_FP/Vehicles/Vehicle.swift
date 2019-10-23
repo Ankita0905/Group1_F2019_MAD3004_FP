@@ -27,9 +27,9 @@ class Vehicle
     var model: String
     var  plateNum: String
   
-    var CommBY: commuteBy
+    var CommBY: String
     
-    init(eId : Int , make : String, model : String, plateNum: String, CommBY: commuteBy ) throws
+    init(eId : Int , make : String, model : String, plateNum: String, CommBY: String ) throws
     {
         self.eId=eId
         self.make=make
