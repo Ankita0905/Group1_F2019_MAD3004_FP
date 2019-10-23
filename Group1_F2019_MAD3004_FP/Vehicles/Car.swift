@@ -14,11 +14,6 @@ enum CarError: Error
     case invalidNoOfDoors(noOfDoor: Int)
 }
 
-enum CarType
-{
-    case manual
-    case Automatic
-}
 
 
 
@@ -27,8 +22,8 @@ class Car: Vehicle
   
     var noOfDoor: Int
     var Convertable: Bool
-    var carType: CarType
-    init(eId: Int, make : String, model : String, plateNum: String, CommBY: commuteBy, noOfDoor: Int, Convertable: Bool, carType: CarType) throws
+    var carType: String
+    init(eId: Int, make : String, model : String, plateNum: String, CommBY: String, noOfDoor: Int, Convertable: Bool, carType: String) throws
     {
         if noOfDoor > 4
         {
