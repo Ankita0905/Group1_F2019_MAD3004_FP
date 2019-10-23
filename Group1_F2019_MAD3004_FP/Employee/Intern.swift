@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Intern:Employee,IPrintable
+class Intern:Employee
 {
   
     
@@ -21,10 +21,11 @@ class Intern:Employee,IPrintable
         //super.init(Emptype : IEmpType,EmpName: IName, EmpAge: IAge, EmpEarning: IEarning)
     }
     
-    func printMyData()
+    override func printMyData()
     {
         print(" Employee Is \(empType)")
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)\n","School :\(schoolName)\n")
+        super.printMyData()
+        print(" School :\(schoolName)\n")
     }
    
    
