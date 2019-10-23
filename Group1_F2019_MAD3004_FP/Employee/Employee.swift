@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class Employee{
+class Employee:IPrintable
+    {
     var empID : Int
     var name: String
     var age: Int
@@ -38,7 +39,9 @@ class Employee{
         empType=EmpType
     }
     
-    
+    func printMyData() {
+        print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)")
+    }
     
     // created By Anikta and Karan
     //https://www.zerotoappstore.com/get-year-month-day-from-date-swift.html

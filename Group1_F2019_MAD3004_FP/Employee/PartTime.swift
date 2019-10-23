@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class PartTime:Employee,IPrintable
+class PartTime:Employee
 {
     var rate:Float
     var hoursworked:Float
@@ -21,9 +21,10 @@ class PartTime:Employee,IPrintable
     }
     
     
-    func printMyData() {
+    override func printMyData() {
         print(" Employee Is \(empType)")
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Age :\(age)\n","Rate :\(rate)\n","Hours Worked :\(hoursworked)")
+        super.printMyData()
+        print(" Rate :\(rate)\n","Hours Worked :\(hoursworked)")
     }
     
     
