@@ -23,7 +23,7 @@ public class JsonParsing {
         case PartTime_Fixed_Amount
         case PartTime_Commissioned
     }
-    
+    //var empDict = Dictionary<String,Employee>()
     func dataparsing() {
         
         let url = Bundle.main.url(forResource: "DataofEmp", withExtension: "json")!
@@ -76,6 +76,7 @@ public class JsonParsing {
                         
                         cPtObj.printMyData()
                     }
+                   // empDict.updateValue( <#Employee#>, forKey: <#T##String#>)
                 }
                 
               
