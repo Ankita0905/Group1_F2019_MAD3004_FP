@@ -79,12 +79,12 @@ public class JsonParsing {
                         cPtObj.printMyData()
                       total+=cPtObj.calEarnings()
                     }
-                    print("------------------------------------")
-                    print("Total Payroll : \(total)")
-                     print("------------------------------------")
+                   
                    // empDict.updateValue( <#Employee#>, forKey: <#T##String#>)
                 }
-                
+                print("------------------------------------")
+                                   print("Total Payroll : \(total)")
+                                    print("------------------------------------")
               
             } catch let parsingError {
                 print("Error While Parsing", parsingError)
