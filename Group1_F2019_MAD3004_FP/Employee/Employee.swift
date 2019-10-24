@@ -12,12 +12,12 @@ class Employee:IPrintable
     var empID : Int
     var name: String
     var age: Int
-    var earning: Float
-    {
-        get {
-            return self.earning
-        }
-    }
+    //var earning: Float
+//    {
+//        get {
+//            return self.earning
+//        }
+//    }
     var empType : String
     var yearofBirth : Int
     
@@ -30,17 +30,21 @@ class Employee:IPrintable
                     return year-age
         }
     }
+    var vobj : Pojo.Vehicle
     
-    init(EmpID : Int,EmpName:String,EmpAge:Int,EmpType: String)
+    init(EmpID : Int,EmpName:String,EmpAge:Int,EmpType: String,Vobj: Pojo.Vehicle)
     {
         empID=EmpID
         name = EmpName
         age = EmpAge
         empType=EmpType
+        vobj=Vobj
+    
     }
     
     func printMyData() {
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)")
+        print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)","Employee has a  : \(vobj.type)\n","  -   Make : \(vobj.make)\n","  -   Year : \(vobj.year)\n","  -   plate : \(vobj.plate)\n","Employee is a  : \(empType)\n")
+             
     }
     
     // created By Anikta and Karan
