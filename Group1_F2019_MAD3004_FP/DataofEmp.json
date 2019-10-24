@@ -18,13 +18,28 @@
         "age": 34,
         "hoursworked": 12,
         "rate": 20,
-        "comission":5
+        "comission":5,
+        "model": "Maruti",
+        "make": "Swift",
+        "commBy": "car",
+        "plate": "NKSOIS-1636",
+        "noOfDoors":4,
+        "convertable": true,
+        "carType": "Sports"
         
     },
     {"emptype": "Intern",
         "id": 4,
         "name": "Patricia Lebsack",
-        "age": 20
+        "age": 20,
+        "model": "ABC",
+        "make": "XYZ",
+        "BikeType": "Sports",
+        "commBy": "Motorcycle",
+        "plate": "NKbjgsdyf-hjb36",
+        "maxSpeed": 200
+        
+        
     },
     {"emptype": "Intern",
         "id": 5,

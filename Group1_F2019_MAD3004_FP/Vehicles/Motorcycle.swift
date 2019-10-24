@@ -9,7 +9,7 @@
 import Foundation
 // by Kamal and Sandeep
 
-class Bike: Vehicle
+class Motorcycle: Vehicle
 {
     
     var type: String
@@ -26,6 +26,7 @@ class Bike: Vehicle
     override func printMyData()
     {
         super.printMyData()
-        print("rides \(type) Bike with maxSpeed \(maxSpeed) ")
+        print("Rides :\(type)")
+        print("Max Speed:\(maxSpeed)")
     }
 }

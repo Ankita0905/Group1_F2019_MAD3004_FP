@@ -15,4 +15,15 @@ struct User {
     var hourswork:Float?
     var rate: Float?
     var commssion: Float?
+    var commuteBy: String?
+    var model:String?
+    var make : String?
+    var plate: String?
+    var noOfDoors : Int?
+    var convertable: Bool?
+    var carType: String?
+    var maxSpeed: Float?
+    var bikeType: String?
+    
+    
 }

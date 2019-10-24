@@ -75,7 +75,51 @@ func readJsonFileArray(jsonFileName: String)
                    // print(ComPTcommission)
                     user.commssion = ComPTcommission
                 }
-                
+                if let commuteBy = jsonDictionay["commBy"] as? String
+                {
+                     //print(commuteBy)
+                    user.commuteBy = commuteBy
+                }
+                if let make = jsonDictionay["make"] as? String
+                {
+                     //print(make)
+                    user.make = make
+                }
+                if let modelof = jsonDictionay["model"] as? String
+                {
+                     //print(modelof)
+                    user.model = modelof
+                }
+                if let plateNumIs = jsonDictionay["plate"] as? String
+                {
+                     //print(plateNumIs)
+                    user.plate = plateNumIs
+                }
+                if let noOfD = jsonDictionay["noOfDoors"] as? Int
+                {
+                     //print(noOfD)
+                    user.noOfDoors = noOfD
+                }
+                if let con = jsonDictionay["convertable"] as? Bool
+                {
+                     //print(con)
+                    user.convertable = con
+                }
+                if let Ctype = jsonDictionay["carType"] as? String
+                {
+                     //print(Ctype)
+                    user.carType = Ctype
+                }
+                if let MaxSpeed = jsonDictionay["maxSpeed"] as? Float
+                {
+                     //print(Ctype)
+                    user.maxSpeed = MaxSpeed
+                }
+                if let biketype = jsonDictionay["BikeType"] as? String
+                {
+                     //print(biketype)
+                    user.bikeType = biketype
+                }
             }
             userList[user.name!] = user
                        
@@ -83,11 +127,17 @@ func readJsonFileArray(jsonFileName: String)
                       //  print("\n\n\n")
                 let obj = Intern(IempID: user.id!,IName: user.name!, IAge: user.age!, IEarning: 100.0, SchoolName: "Lambton", IEmpType: user.emptype!)
                         obj.printMyData()
+                if user.commuteBy=="Motorcycle"
+                               {
+                                   let mObj = try? Motorcycle(type: user.bikeType!, maxSpeed: user.maxSpeed!, eId: user.id!, make: user.make!, model: user.model!, plateNum: user.plate!, CommBY: user.commuteBy!)
+                                mObj?.printMyData()
+                               }
+                
              }
            else if user.emptype=="PartTime"
                       {
                          // print("\n\n")
-                        let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, Rate: 23, HoursWorked: user.hourswork!)
+                        let PTobj = PartTime(PTEmpID: user.id!,PTEmptype: user.emptype!, PTEmpName: user.name!, PTEmpAge: user.age!, Rate: user.rate!, HoursWorked: user.hourswork!)
                           PTobj.printMyData()
                           
                       }
@@ -95,6 +145,13 @@ func readJsonFileArray(jsonFileName: String)
             {
                 let ComPTobj = CommissionBasedPartTime(ComTEmpID: user.id!, ComTEmptype: user.emptype!, ComTEmpName: user.name!, ComTEmpAge: user.age!, Rate: user.rate!, HoursWorked: user.hourswork!, CommissionPer: user.commssion!)
                 ComPTobj.printMyData()
+                if user.commuteBy == "car"
+                {
+                    let carObj = try? Car(eId: user.id!, make: user.make!, model: user.model!, plateNum: user.plate!, CommBY: user.commuteBy!, noOfDoor: user.noOfDoors!, Convertable: user.convertable!, carType: user.carType!)
+                   carObj?.printMyData()
+
+                }
+               
             }
             
             

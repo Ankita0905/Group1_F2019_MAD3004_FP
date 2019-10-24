@@ -33,38 +33,35 @@ class Car: Vehicle
            self.Convertable=Convertable
            self.carType=carType
         try super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
-    
+    }
     
     
   /*  catch CarError.invalidNoOfDoors(let noOfDoor)
     {
     print("Inavlid Update Name : \(noOfDoor)")
     }*/
-        func SetFacultyNam(name: Int) throws
-        {
-            do{
-                if noOfDoor > 4
-                {
-                    throw CarError.invalidNoOfDoors(noOfDoor: noOfDoor)
-                }
-               self.noOfDoor=noOfDoor
-                
-              }
-            catch CarError.invalidNoOfDoors(let facultyName)
-            {
-                print("Inavlid Update Name : \(facultyName)")
-            }
-        }
+//        func SetFacultyNam(name: Int) throws
+//        {
+//            do{
+//                if noOfDoor > 4
+//                {
+//                    throw CarError.invalidNoOfDoors(noOfDoor: noOfDoor)
+//                }
+//               self.noOfDoor=noOfDoor
+//
+//              }
+//            catch CarError.invalidNoOfDoors(let facultyName)
+//            {
+//                print("Inavlid Update Name : \(facultyName)")
+//            }
+//        }
 
-        func printMyData()
+    override func printMyData()
         {
             super.printMyData()
-            print("Drives \(carType)   ")
-            print("\(carType) has \(noOfDoor)")
-            print("\(carType) is \(Convertable)")
+           
+            print(" No Of Doors :\(noOfDoor)")
+            print(" Convertible :\(Convertable)\n")
         }
-    
-    
-    
     }
-}
+
