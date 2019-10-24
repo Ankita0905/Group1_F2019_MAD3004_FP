@@ -48,12 +48,17 @@ class Employee:IPrintable
         print(" Emp ID :\(empID)")
         print("Name :\(name)\n")
         print("Year Of Birth :\(yearofBirth)")
-        print("Employee has a  : \(vobj.type)")
-        print("  -   Make : \(vobj.make)")
-        print("  -   Year : \(vobj.year)")
-        print("  -   Plate : \(vobj.plate)")
-        print("Employee is a  : \(empType)")
-            
+        if vobj.type==""{
+            print("Employee has No vehicle")
+        }
+        else{
+            print("Employee has a  : \(vobj.type)")
+            print("  -   Make : \(vobj.make)")
+            print("  -   Year : \(vobj.year)")
+            print("  -   Plate : \(vobj.plate)")
+            print("Employee is a  : \(empType)")
+
+        }
     }
     
     // created By Anikta and Karan
