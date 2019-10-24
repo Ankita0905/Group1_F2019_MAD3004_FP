@@ -7,61 +7,27 @@
 //
 
 import Foundation
-
-// by Kamal and Sandeep
-enum CarError: Error
+class Car : Vehicle
 {
-    case invalidNoOfDoors(noOfDoor: Int)
-}
-
-
-
-
-class Car: Vehicle
-{
-  
-    var noOfDoor: Int
-    var Convertable: Bool
-    var carType: String
-    init(eId: Int, make : String, model : String, plateNum: String, CommBY: String, noOfDoor: Int, Convertable: Bool, carType: String) throws
-    {
-        if noOfDoor > 4
-        {
-            throw CarError.invalidNoOfDoors(noOfDoor: noOfDoor)
+    var noOfDoors = Int()
+    var model = String()
+    var yMake = String()
+    
+    
+    
+    init(noOfDoors : Int,Make  : String, plate : String ,model : String, year : String) {
+        super.init(make: Make, plate: plate)
+        self.model = model
+        self.yMake = year
+        self.noOfDoors = noOfDoors
         }
-           self.noOfDoor = noOfDoor
-           self.Convertable=Convertable
-           self.carType=carType
-        try super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
-    }
     
-    
-  /*  catch CarError.invalidNoOfDoors(let noOfDoor)
-    {
-    print("Inavlid Update Name : \(noOfDoor)")
-    }*/
-//        func SetFacultyNam(name: Int) throws
-//        {
-//            do{
-//                if noOfDoor > 4
-//                {
-//                    throw CarError.invalidNoOfDoors(noOfDoor: noOfDoor)
-//                }
-//               self.noOfDoor=noOfDoor
-//
-//              }
-//            catch CarError.invalidNoOfDoors(let facultyName)
-//            {
-//                print("Inavlid Update Name : \(facultyName)")
-//            }
-//        }
-
     override func printMyData()
-        {
-            super.printMyData()
-           
-            print(" No Of Doors :\(noOfDoor)")
-            print(" Convertible :\(Convertable)\n")
-        }
+    {
+        super.printMyData()
+        print("Number of Doors \(noOfDoors)")
+        print("Model : \(model)")
+        print("Year of Make : \(yMake)")
+        
     }
-
+}
