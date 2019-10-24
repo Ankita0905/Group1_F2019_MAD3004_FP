@@ -28,7 +28,7 @@ class CommissionBasedPartTime:PartTime
     override func printMyData() {
         super.printMyData()
         print(" Commission % :\(commissionPer)")
-       print(" Total Earnings : \(calEarnings())\n")
+        print(" Total Earnings : \(calEarnings().currencyFormat())\n")
     }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55326DB32361429300AD2DAA /* pojo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55326DB22361429300AD2DAA /* pojo.swift */; };
+		55326DB623616C2B00AD2DAA /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55326DB523616C2B00AD2DAA /* Extention.swift */; };
 		55C07864235968B2008548CA /* DataofEmp.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C07862235965AF008548CA /* DataofEmp.json */; };
 		55C078672359698A008548CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C078662359698A008548CA /* User.swift */; };
 		9B97B1CA235F884E00C2C017 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1C9235F884E00C2C017 /* Vehicle.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		55326DB22361429300AD2DAA /* pojo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pojo.swift; sourceTree = "<group>"; };
+		55326DB523616C2B00AD2DAA /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		55C07862235965AF008548CA /* DataofEmp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataofEmp.json; sourceTree = "<group>"; };
 		55C078662359698A008548CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B97B1C9235F884E00C2C017 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55326DB423616C0C00AD2DAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				55326DB523616C2B00AD2DAA /* Extention.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		55C0786523596955008548CA /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		9B9D6A4D23567C11007E54A4 /* Group1_F2019_MAD3004_FP */ = {
 			isa = PBXGroup;
 			children = (
+				55326DB423616C0C00AD2DAA /* Extensions */,
 				55C0786523596955008548CA /* Models */,
 				9B9D6A5C23567D92007E54A4 /* Employee */,
 				9B9D6A5523567CE4007E54A4 /* Vehicles */,
@@ -199,6 +210,7 @@
 				9B9D6A6623567E27007E54A4 /* Intern.swift in Sources */,
 				9B9D6A6923567E40007E54A4 /* PartTime.swift in Sources */,
 				9B9D6A6023567DF2007E54A4 /* CommissionBasedPartTime.swift in Sources */,
+				55326DB623616C2B00AD2DAA /* Extention.swift in Sources */,
 				9B9D6A6423567E15007E54A4 /* FullTime.swift in Sources */,
 				9B9D6A6B23567E76007E54A4 /* IPrintable.swift in Sources */,
 				55C078672359698A008548CA /* User.swift in Sources */,

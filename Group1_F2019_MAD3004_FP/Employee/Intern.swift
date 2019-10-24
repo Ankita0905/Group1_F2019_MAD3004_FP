@@ -26,7 +26,7 @@ class Intern:Employee
        
         super.printMyData()
         print(" School :\(schoolName)\n")
-        //print("Total Earnings : \(calEarnings())")
+        print("Total Earnings : \(calEarnings().currencyFormat())")
     }
    
    
