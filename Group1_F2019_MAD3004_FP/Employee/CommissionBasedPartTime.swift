@@ -30,5 +30,7 @@ class CommissionBasedPartTime:PartTime
         print(" Commission % :\(commissionPer)")
         print(" Total Earnings : \(calEarnings().currencyFormat())\n")
     }
+    
+   
 
 }
