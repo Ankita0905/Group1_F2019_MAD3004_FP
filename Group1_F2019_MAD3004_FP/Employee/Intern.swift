@@ -14,18 +14,19 @@ class Intern:Employee
    
     var schoolName:String
     
-    init(IempID:Int,IName:String,IAge:Int,IEarning:Float,SchoolName:String,IEmpType: String)
+    init(IempID:Int,IName:String,IAge:Int,IEarning:Float,SchoolName:String,IEmpType: String,Vobj: Pojo.Vehicle)
     {
         self.schoolName=SchoolName
-        super.init(EmpID: IempID, EmpName: IName, EmpAge: IAge,  EmpType: IEmpType)
+        super.init(EmpID: IempID, EmpName: IName, EmpAge: IAge,  EmpType: IEmpType, Vobj: Vobj)
         //super.init(Emptype : IEmpType,EmpName: IName, EmpAge: IAge, EmpEarning: IEarning)
     }
     
     override func printMyData()
     {
-        print(" Employee Is \(empType)")
+       
         super.printMyData()
         print(" School :\(schoolName)\n")
+        //print("Total Earnings : \(calEarnings())")
     }
    
    

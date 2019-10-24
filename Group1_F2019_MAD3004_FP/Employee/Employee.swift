@@ -43,8 +43,17 @@ class Employee:IPrintable
     }
     
     func printMyData() {
-        print(" Emp ID :\(empID)\n","Name :\(name)\n","Year Of Birth :\(yearofBirth)","Employee has a  : \(vobj.type)\n","  -   Make : \(vobj.make)\n","  -   Year : \(vobj.year)\n","  -   plate : \(vobj.plate)\n","Employee is a  : \(empType)\n")
-             
+        
+        print("---------------------------------------------------------")
+        print(" Emp ID :\(empID)")
+        print("Name :\(name)\n")
+        print("Year Of Birth :\(yearofBirth)")
+        print("Employee has a  : \(vobj.type)")
+        print("  -   Make : \(vobj.make)")
+        print("  -   Year : \(vobj.year)")
+        print("  -   Plate : \(vobj.plate)")
+        print("Employee is a  : \(empType)")
+            
     }
     
     // created By Anikta and Karan
