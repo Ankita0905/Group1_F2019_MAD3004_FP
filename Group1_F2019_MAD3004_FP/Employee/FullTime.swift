@@ -23,7 +23,7 @@ class FullTime:Employee
     
     override func printMyData() {
         super.printMyData()
-        print("Salary :\(salary)\n","Bonus :\(bonus)\n","Total Earnings :\(calEarnings().currencyFormat())")
+        print("Salary :\(salary.currencyFormat())\n","Bonus :\(bonus.currencyFormat())\n","Total Earnings :\(calEarnings().currencyFormat())")
     }
     
     override func calEarnings()->Float

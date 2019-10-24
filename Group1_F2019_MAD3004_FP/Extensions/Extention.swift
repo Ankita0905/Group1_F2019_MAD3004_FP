@@ -12,6 +12,10 @@ extension Float {
     //code seen from Google
     func currencyFormat() ->String
     {
-        return String(format: "$%0.2f", Float(self))
+        return String(format: "$%0.2f", locale: Locale.current, Float(self))
+    }
+    
+    func hours() -> String {
+           return "\(self) Hrs"
     }
 }
