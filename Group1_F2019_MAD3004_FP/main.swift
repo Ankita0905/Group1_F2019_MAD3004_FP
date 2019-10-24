@@ -58,21 +58,21 @@ public class JsonParsing {
                         iObj.printMyData()
                        total+=iObj.calEarnings()
                     }
-                    else if (empType.FullTime.rawValue == model.jsondata[i].type)
+                    else if ("FullTime" == model.jsondata[i].type)
                     {
                         let fObj = FullTime(FTEmpID: model.jsondata[i].id, FTEmptype: model.jsondata[i].type, FTEmpName: model.jsondata[i].name, FTEmpAge: model.jsondata[i].age, Salary: model.jsondata[i].salary!, Bonus: model.jsondata[i].bonus!, Vobj: model.jsondata[i].vehicle)
                         
                         fObj.printMyData()
                     total+=fObj.calEarnings()
                     }
-                    else if(empType.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type)
+                    else if("PartTime_Fixed_Amount" == model.jsondata[i].type)
                     {
                         let fPtObj = FixedBasedPartTime(FixTEmpID: model.jsondata[i].id, FixTEmptype: model.jsondata[i].type, FixTEmpName: model.jsondata[i].name, FixTEmpAge: model.jsondata[i].age, Rate: model.jsondata[i].rate!, HoursWorked: model.jsondata[i].hoursWorked!, FixedAmount: model.jsondata[i].fixedAmount!, Vobj: model.jsondata[i].vehicle)
                         
                         fPtObj.printMyData()
                       total+=fPtObj.calEarnings()
                     }
-                    else if(empType.PartTime_Commissioned.rawValue == model.jsondata[i].type)
+                    else if("PartTime_Commissioned" == model.jsondata[i].type)
                     {
                         let cPtObj = CommissionBasedPartTime(ComTEmpID: model.jsondata[i].id, ComTEmptype: model.jsondata[i].type, ComTEmpName: model.jsondata[i].name, ComTEmpAge: model.jsondata[i].age, Rate: model.jsondata[i].rate!, HoursWorked: model.jsondata[i].hoursWorked!, CommissionPer: model.jsondata[i].commissionPercent!, Vobj: model.jsondata[i].vehicle)
                         
