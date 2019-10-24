@@ -72,4 +72,6 @@ class Employee:IPrintable
     {
         return 1000
     }
+    
+    
 }
