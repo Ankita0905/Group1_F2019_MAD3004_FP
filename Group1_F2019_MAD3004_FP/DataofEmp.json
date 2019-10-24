@@ -33,7 +33,7 @@
     "doors" : 2,
     "type": "Car"
     },
-    "salary": 8500.0,
+    "salary": 1500.0,
     "bonus": 300.0,
     "type": "FullTime"
     },
@@ -41,12 +41,12 @@
     "@class": "ca.lambton.payroll.employee.FixedBasedPartTime",
     "id": 3,
     "name": "Sandeep Singh",
-    "age": 23,
+    "age": 24,
     "vehicle": {
     "@class": "Motorcycle",
     "id": 0,
-    "make": "YAMATO",
-    "plate": "MNOP-875 ",
+    "make": "Hero",
+    "plate": "EFGH-875 ",
     "model": "MODEL 3",
     "year" : "2018",
     "type": "Motorcycle"
@@ -60,10 +60,10 @@
     "@class": "ca.lambton.payroll.employee.CommissionBasedPartTime",
     "id": 4,
     "name": "Kamal Kaur",
-    "age": 29,
+    "age": 23,
     
     "rate": 40.0,
-    "hoursWorked": 178,
+    "hoursWorked": 17,
     "commissionPercent": 20,
     "type": "PartTime_Commissioned",
     "vehicle": {

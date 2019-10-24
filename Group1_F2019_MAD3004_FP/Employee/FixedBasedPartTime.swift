@@ -11,9 +11,9 @@ class FixedBasedPartTime:PartTime
 {
     var fixedAmount:Float
     
-    init(FixTEmpID: Int, FixTEmptype: String, FixTEmpName: String, FixTEmpAge: Int,  Rate: Float, HoursWorked: Float,FixedAmount:Float) {
+    init(FixTEmpID: Int, FixTEmptype: String, FixTEmpName: String, FixTEmpAge: Int,  Rate: Float, HoursWorked: Float,FixedAmount:Float,Vobj: Pojo.Vehicle) {
         self.fixedAmount=FixedAmount
-        super.init(PTEmpID: FixTEmpID, PTEmptype: FixTEmptype, PTEmpName: FixTEmpName, PTEmpAge: FixTEmpAge, Rate: Rate, HoursWorked: HoursWorked)
+        super.init(PTEmpID: FixTEmpID, PTEmptype: FixTEmptype, PTEmpName: FixTEmpName, PTEmpAge: FixTEmpAge, Rate: Rate, HoursWorked: HoursWorked, Vobj: Vobj)
     }
     
     override func calEarnings()->Float {
@@ -22,6 +22,7 @@ class FixedBasedPartTime:PartTime
     }
     override func printMyData() {
         super.printMyData()
-       print("Toatl Earnings : \(calEarnings())")
+        print(" Fixed Amount \(fixedAmount)")
+       print(" Total Earnings : \(calEarnings())")
     }
 }

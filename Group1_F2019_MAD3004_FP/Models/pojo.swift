@@ -23,8 +23,8 @@ struct Jsondatum: Codable {
     let vehicle: Vehicle
     let schoolName: String?
     let type: String
-    let salary, bonus, rate, hoursWorked: Int?
-    let fixedAmount, commissionPercent: Int?
+    let salary, bonus, rate, hoursWorked: Float?
+    let fixedAmount, commissionPercent: Float?
 
     enum CodingKeys: String, CodingKey {
         case jsondatumClass = "@class"
