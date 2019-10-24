@@ -1,76 +1,80 @@
-[
-    
+
+{
+    "jsondata": [
     {
-        "emptype": "Intern",
-        "id": 1,
-        "name": "Leanne Graham",
-        "age" : 54
-        
+    "@class": "ca.lambton.payroll.employee.Intern",
+    "id": 1,
+    "name": "Karan Kumar",
+    "age": 22,
+    "vehicle": {
+    "@class": "Motorcycle",
+    "id": 0,
+    "make": "Honda",
+    "plate": "ABCD-123",
+    "model": "MODEL 1",
+    "year" : "2015",
+    "type": "Motorcycle"
     },
-    {"emptype": "Fulltime",
-        "id": 2,
-        "name": "Ervin Howell",
-        "age" : 36
+    "schoolName": "Lambton College",
+    "type": "Intern"
     },
-    {"emptype": "ComPartTime",
-        "id": 3,
-        "name": "Clementine Bauch",
-        "age": 34,
-        "hoursworked": 12,
-        "rate": 20,
-        "comission":5,
-        "model": "Maruti",
-        "make": "Swift",
-        "commBy": "car",
-        "plate": "NKSOIS-1636",
-        "noOfDoors":4,
-        "convertable": true,
-        "carType": "Sports"
-        
+    {
+    "@class": "ca.lambton.payroll.employee.FullTime",
+    "id": 2,
+    "name": "Ankita Jain",
+    "age": 24,
+    "vehicle": {
+    "@class": "Car",
+    "id": 0,
+    "make": "BMW",
+    "plate": "EFGH-123 ",
+    "model": "MODEL 2",
+    "year" : "2015",
+    "doors" : 2,
+    "type": "Car"
     },
-    {"emptype": "Intern",
-        "id": 4,
-        "name": "Patricia Lebsack",
-        "age": 20,
-        "model": "ABC",
-        "make": "XYZ",
-        "BikeType": "Sports",
-        "commBy": "Motorcycle",
-        "plate": "NKbjgsdyf-hjb36",
-        "maxSpeed": 200
-        
-        
+    "salary": 8500.0,
+    "bonus": 300.0,
+    "type": "FullTime"
     },
-    {"emptype": "Intern",
-        "id": 5,
-        "name": "Chelsey Dietrich",
-        "age": 24
+    {
+    "@class": "ca.lambton.payroll.employee.FixedBasedPartTime",
+    "id": 3,
+    "name": "Sandeep Singh",
+    "age": 23,
+    "vehicle": {
+    "@class": "Motorcycle",
+    "id": 0,
+    "make": "YAMATO",
+    "plate": "MNOP-875 ",
+    "model": "MODEL 3",
+    "year" : "2018",
+    "type": "Motorcycle"
     },
-    {"emptype": "Intern",
-        "id": 6,
-        "name": "Mrs. Dennis Schulist",
-        "age": 74
+    "rate": 20.0,
+    "hoursWorked": 165,
+    "fixedAmount": 130.0,
+    "type": "PartTime_Fixed_Amount"
     },
-    {"emptype": "Intern",
-        "id": 7,
-        "name": "Kurtis Weissnat",
-        "age": 23
-    },
-    {"emptype": "Intern",
-        "id": 8,
-        "name": "Nicholas Runolfsdottir V",
-        "age": 35
-    },
-    {"emptype": "Intern",
-        "id": 9,
-        "name": "Glenna Reichert",
-        "age": 42
-    },
-    {"emptype": "Intern",
-        "id": 10,
-        "name": "Clementina DuBuque",
-        "age": 38
+    {
+    "@class": "ca.lambton.payroll.employee.CommissionBasedPartTime",
+    "id": 4,
+    "name": "Kamal Kaur",
+    "age": 29,
+    
+    "rate": 40.0,
+    "hoursWorked": 178,
+    "commissionPercent": 20,
+    "type": "PartTime_Commissioned",
+    "vehicle": {
+        "@class": "Car",
+        "id": 0,
+        "make": "Honda",
+        "plate": "IJKL-123",
+        "model": "MODEL 4",
+        "year" : "2015",
+        "type": "Car"
     }
-]
-
-
+    }
+    ]
+}
