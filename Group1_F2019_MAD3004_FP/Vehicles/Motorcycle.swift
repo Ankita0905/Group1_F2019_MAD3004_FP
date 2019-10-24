@@ -9,24 +9,25 @@
 import Foundation
 // by Kamal and Sandeep
 
-class Motorcycle: Vehicle
+class Motorcycle : Vehicle
 {
     
-    var type: String
-    var maxSpeed: Float
-
-    init(type: String, maxSpeed: Float,eId: Int, make : String, model : String, plateNum: String, CommBY: String) throws
-    {
-      
-        self.type=type
-        self.maxSpeed=maxSpeed
-         try super.init(eId: eId , make: make, model: model , plateNum: plateNum, CommBY: CommBY)
-    }
     
-    override func printMyData()
+    var model : String = ""
+    var yMake = String()
+    
+    init(make : String , plate : String, model : String,  year: String)
     {
+        super.init(make: make, plate: plate)
+        self.model = model
+        self.yMake = year
+        
+    }
+    override func printMyData()
+        {
         super.printMyData()
-        print("Rides :\(type)")
-        print("Max Speed:\(maxSpeed)")
+        print("Model : \(model)")
+        print("Year of Make : \(yMake)")
+
     }
 }
