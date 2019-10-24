@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55326DB32361429300AD2DAA /* pojo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55326DB22361429300AD2DAA /* pojo.swift */; };
 		55C07864235968B2008548CA /* DataofEmp.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55C07862235965AF008548CA /* DataofEmp.json */; };
 		55C078672359698A008548CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C078662359698A008548CA /* User.swift */; };
 		9B97B1CA235F884E00C2C017 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97B1C9235F884E00C2C017 /* Vehicle.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55326DB22361429300AD2DAA /* pojo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pojo.swift; sourceTree = "<group>"; };
 		55C07862235965AF008548CA /* DataofEmp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataofEmp.json; sourceTree = "<group>"; };
 		55C078662359698A008548CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B97B1C9235F884E00C2C017 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				55C078662359698A008548CA /* User.swift */,
+				55326DB22361429300AD2DAA /* pojo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B97B1CA235F884E00C2C017 /* Vehicle.swift in Sources */,
+				55326DB32361429300AD2DAA /* pojo.swift in Sources */,
 				9B9D6A5B23567D6A007E54A4 /* Motorcycle.swift in Sources */,
 				9B9D6A6623567E27007E54A4 /* Intern.swift in Sources */,
 				9B9D6A6923567E40007E54A4 /* PartTime.swift in Sources */,
