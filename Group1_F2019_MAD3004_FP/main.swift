@@ -17,7 +17,7 @@ import Foundation
 public class JsonParsing {
     
     
-    enum emptype : String{
+    enum empType : String{
         case Intern
         case FullTime
         case PartTime_Fixed_Amount
@@ -39,15 +39,15 @@ public class JsonParsing {
 
             
             do {
-                //here dataResponse received from a network request
+                
                 let decoder = JSONDecoder()
                 
                 
-                //Decode JSON Response Data
+            
                 let model = try decoder.decode(Pojo.Welcome.self, from: jsonData)
 
                 
-                //iterating through the data
+                
                 for i in 0..<model.jsondata.count{
                     
                     if("Intern" == model.jsondata[i].type)
@@ -57,20 +57,20 @@ public class JsonParsing {
                         iObj.printMyData()
                         
                     }
-                    else if (emptype.FullTime.rawValue == model.jsondata[i].type)
+                    else if (empType.FullTime.rawValue == model.jsondata[i].type)
                     {
                         let fObj = FullTime(FTEmpID: model.jsondata[i].id, FTEmptype: model.jsondata[i].type, FTEmpName: model.jsondata[i].name, FTEmpAge: model.jsondata[i].age, Salary: model.jsondata[i].salary!, Bonus: model.jsondata[i].bonus!, Vobj: model.jsondata[i].vehicle)
                         
                         fObj.printMyData()
                         
                     }
-                    else if(emptype.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type)
+                    else if(empType.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type)
                     {
                         let fPtObj = FixedBasedPartTime(FixTEmpID: model.jsondata[i].id, FixTEmptype: model.jsondata[i].type, FixTEmpName: model.jsondata[i].name, FixTEmpAge: model.jsondata[i].age, Rate: model.jsondata[i].rate!, HoursWorked: model.jsondata[i].hoursWorked!, FixedAmount: model.jsondata[i].fixedAmount!, Vobj: model.jsondata[i].vehicle)
                         
                         fPtObj.printMyData()
                     }
-                    else if(emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type)
+                    else if(empType.PartTime_Commissioned.rawValue == model.jsondata[i].type)
                     {
                         let cPtObj = CommissionBasedPartTime(ComTEmpID: model.jsondata[i].id, ComTEmptype: model.jsondata[i].type, ComTEmpName: model.jsondata[i].name, ComTEmpAge: model.jsondata[i].age, Rate: model.jsondata[i].rate!, HoursWorked: model.jsondata[i].hoursWorked!, CommissionPer: model.jsondata[i].commissionPercent!, Vobj: model.jsondata[i].vehicle)
                         
@@ -80,7 +80,7 @@ public class JsonParsing {
                 
               
             } catch let parsingError {
-                print("Error", parsingError)
+                print("Error While Parsing", parsingError)
             }
             
         }
