@@ -48,9 +48,9 @@ class Vehicle
     
      func printMyData()
      {
-        print("Employee no \(eId) has a \(commuteBy.self)")
-        print("model of vehicle is \(model)")
-        print("make of vehicle is \(make)" )
-        print("plate Number of vehicle is \(plateNum)")
+        print(" Drives a \(CommBY)")
+        print(" Model: \(model)")
+        print(" Make :\(make)" )
+        print(" Plate Number :\(plateNum)")
     }
 }
