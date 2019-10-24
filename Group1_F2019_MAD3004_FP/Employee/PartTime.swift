@@ -22,7 +22,7 @@ class PartTime:Employee
     
     
     override func printMyData() {
-        print(" Employee Is \(empType)")
+       // print(" Employee Is \(empType)")
         super.printMyData()
         print(" Rate :\(rate)\n","Hours Worked :\(hoursworked.hours())")
     }
