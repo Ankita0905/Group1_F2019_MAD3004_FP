@@ -13,16 +13,15 @@ class FullTime:Employee
     var bonus:Float
     
     
-    init(FTEmpID: Int,FTEmptype: String, FTEmpName:String,FTEmpAge:Int,Salary:Float,Bonus:Float)
+    init(FTEmpID: Int,FTEmptype: String, FTEmpName:String,FTEmpAge:Int,Salary:Float,Bonus:Float,Vobj:Pojo.Vehicle)
     {
         self.salary=Salary
         self.bonus=Bonus
-        super.init(EmpID: FTEmpID,EmpName:FTEmpName, EmpAge:FTEmpAge,  EmpType: FTEmptype)
+        super.init(EmpID: FTEmpID,EmpName:FTEmpName, EmpAge:FTEmpAge,  EmpType: FTEmptype, Vobj: Vobj)
     }
     
     
     override func printMyData() {
-        print(" Employee Is \(empType)")
         super.printMyData()
         print("Salary :\(salary)\n","Bonus :\(bonus)\n","Total Earnings :\(calEarnings())")
     }
